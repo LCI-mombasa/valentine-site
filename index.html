@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Valentine for Shanice</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <!-- Login Screen -->
+  <div id="login-screen">
+    <h1>❤️ Enter PIN ❤️</h1>
+    <input type="password" id="pin-input" placeholder="Enter PIN">
+    <button onclick="checkPin()">Login</button>
+  </div>
+
+  <!-- Main Content (hidden until PIN is correct) -->
+  <div id="main-content" style="display:none;">
+    <div class="decorations"></div>
+    <h1 class="title">❤️ For Shanice ❤️</h1>
+
+    <!-- Meaningful Message -->
+    <p class="message">
+      Shanice, you mean the world to me. You are my joy, my peace, and my inspiration.  
+      I may not have fancy cars, hotels, or restaurants to offer, but I promise you something more valuable:  
+      honesty, care, and something truly special this Saturday if you’ll be available.  
+      If you ever have second thoughts, or if you’ve already found someone else, please come clean —  
+      because honesty is always better than deception. ❤️
+    </p>
+
+    <!-- Questions -->
+    <form action="https://formspree.io/f/https://formspree.io/f/mwvnvzvd" method="POST">
+      <p class="question">Would you accept to be my girlfriend?</p>
+      <label><input type="radio" name="girlfriend" value="yes"> Yes 💕</label>
+      <label><input type="radio" name="girlfriend" value="totally_yes"> Totally Yes 💖</label>
+
+      <p class="question">Would you accept to be my Valentine’s, even if it’s not fancy but special this Saturday?</p>
+      <label><input type="radio" name="valentine" value="yes"> Yes 🌹</label>
+      <label><input type="radio" name="valentine" value="totally_yes"> Totally Yes 💘</label>
+      <input type="hidden" name="_redirect" value="https://LCI-mombasa.github.io/valentine-site/thankyou.html">
+
+
+      <br><br>
+      <button type="submit" class="submit-btn">Submit Answers</button>
+    </form>
+
+    <!-- Play Song -->
+    <button onclick="playMusic()" class="music-btn">🎵 Play Our Song</button>
+    <audio id="bg-music">
+      <source src="music.mp3.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Photo -->
+    <div class="photo-section">
+      <img src="shanice.jpg.jpg" alt="Shanice" class="romantic-photo">
+      <p class="caption">LOVE OF MY LIFE ❤️</p>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,115 @@
+/* General body styling */
+body {
+  background: pink;
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* Container for main content */
+.container {
+  width: 95%; /* fits phone screen */
+  margin: auto;
+  padding: 15px;
+  background: #fff0f5;
+  border-radius: 15px;
+}
+
+/* Title styling */
+h1.title {
+  font-size: 26px; /* smaller for mobile */
+  color: red;
+  font-family: 'Cursive', sans-serif;
+  margin-top: 10px;
+}
+
+/* Meaningful message */
+.message {
+  font-size: 18px;
+  margin: 20px;
+  font-family: 'Georgia', serif; /* elegant serif font */
+  color: #b30000;
+  opacity: 0; /* hidden at first */
+  transition: opacity 3s ease-in; /* smooth fade */
+}
+
+.message.fade-in {
+  opacity: 1; /* becomes visible */
+}
+
+/* Questions */
+.question {
+  font-size: 18px;
+  margin: 15px 0 8px;
+  font-family: 'Verdana', sans-serif; /* clean readable font */
+  color: #800000;
+}
+
+/* Options */
+.option {
+  display: block;
+  margin: 8px 0;
+  font-size: 16px;
+  font-family: 'Tahoma', sans-serif;
+}
+
+/* Buttons */
+.submit-btn, .music-btn {
+  background: red;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 10px;
+  font-size: 18px;
+  cursor: pointer;
+  margin-top: 15px;
+  font-family: 'Trebuchet MS', sans-serif;
+}
+
+.submit-btn:hover, .music-btn:hover {
+  background: darkred;
+}
+
+/* Romantic photo */
+.romantic-photo {
+  width: 90%; /* scales to phone width */
+  max-width: 300px;
+  border-radius: 15px;
+  margin: 15px auto;
+  box-shadow: 0 0 15px rgba(255, 0, 0, 0.5);
+}
+
+/* Caption under photo */
+.caption {
+  font-size: 16px;
+  color: #b30000;
+  margin-top: 6px;
+  font-style: italic;
+  font-family: 'Courier New', monospace;
+}
+
+/* Floating hearts and roses */
+.decorations {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.heart {
+  position: absolute;
+  top: -20px;
+  font-size: 24px;
+  animation: floatDown linear forwards;
+}
+
+@keyframes floatDown {
+  to {
+    transform: translateY(100vh);
+    opacity: 0;
+  }
+}
